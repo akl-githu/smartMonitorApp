@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Systems Status</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Systems Status</h1>
+            <div class="systems">
+                @foreach (var system in Model)
+                {
+                <div class="system" style="border-color: @system.Color;">
+                    <h2>@system.Name</h2>
+                    <p>Status: <span style="color: @system.Color;">@system.Status</span></p>
+                </div>
+            }
+            </div>
+        </div>
+    </body>
+</html>
