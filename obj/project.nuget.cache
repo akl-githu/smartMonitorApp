@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "kM/FKEFP8Lo=",
-  "success": false,
+  "dgSpecHash": "cFAWWbjmFkI=",
+  "success": true,
   "projectFilePath": "D:\\smartMonitorApp\\smartMonitorApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -50,9 +50,10 @@
   ],
   "logs": [
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for Microsoft.EntityFrameworkCore.Relational. Install/reference Microsoft.EntityFrameworkCore.Relational 9.0.6 directly to project smartMonitorApp to resolve this issue. \r\n smartMonitorApp -> Microsoft.EntityFrameworkCore.Design 9.0.6 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.6) \r\n smartMonitorApp -> Pomelo.EntityFrameworkCore.MySql 8.0.3 -> Microsoft.EntityFrameworkCore.Relational (>= 8.0.13 && <= 8.0.999).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 8.0.3 requires Microsoft.EntityFrameworkCore.Relational (>= 8.0.13 && <= 8.0.999) but version Microsoft.EntityFrameworkCore.Relational 9.0.6 was resolved.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net8.0"
