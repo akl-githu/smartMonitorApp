@@ -13,8 +13,8 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o /app
 
 # Final stage
-# Use the official .NET runtime image to run the application
-FROM mcr.microsoft.com/dotnet/runtime:8.0 AS runtime
+# Use the official ASP.NET Core to run the application
+FROM mcr.microsoft.com.rproxy.goskope.com/dotnet/aspnet:8.0
 WORKDIR /app
 
 # Copy the published application from the build stage
