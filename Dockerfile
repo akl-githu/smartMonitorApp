@@ -14,7 +14,8 @@ RUN dotnet publish -c Release -o /app
 
 # Final stage
 # Use the official ASP.NET Core to run the application
-FROM mcr.microsoft.com.rproxy.goskope.com/dotnet/aspnet:8.0
+#FROM jelastic/dotnet:8.0.411-almalinux-9
+From ubuntu/dotnet-aspnet:candidate
 WORKDIR /app
 
 # Copy the published application from the build stage
